@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 980" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#020202"/>
+      <stop offset=".42" stop-color="#090909"/>
+      <stop offset="1" stop-color="#000"/>
+    </linearGradient>
+    <linearGradient id="goldRiver" x1=".35" x2=".76" y1=".2" y2="1">
+      <stop offset="0" stop-color="#f6d18a" stop-opacity=".98"/>
+      <stop offset=".34" stop-color="#c89542" stop-opacity=".86"/>
+      <stop offset=".7" stop-color="#8e5f25" stop-opacity=".58"/>
+      <stop offset="1" stop-color="#2d1d0d" stop-opacity=".14"/>
+    </linearGradient>
+    <linearGradient id="riverGlow" x1=".35" x2=".78" y1=".15" y2="1">
+      <stop offset="0" stop-color="#f2c879" stop-opacity=".44"/>
+      <stop offset=".52" stop-color="#c89542" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="sunGlow" cx=".55" cy=".26" r=".55">
+      <stop offset="0" stop-color="#c89542" stop-opacity=".2"/>
+      <stop offset=".42" stop-color="#7b4d1f" stop-opacity=".08"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="980" fill="url(#sky)"/>
+  <rect width="1600" height="980" fill="url(#sunGlow)"/>
+
+  <path d="M0 650 L145 524 L264 578 L416 398 L560 520 L710 286 L846 486 L990 350 L1160 545 L1290 430 L1600 642 L1600 980 L0 980Z" fill="#070707"/>
+  <path d="M0 730 L180 598 L350 646 L520 474 L700 620 L880 410 L1045 600 L1210 502 L1600 724 L1600 980 L0 980Z" fill="#030303"/>
+  <path d="M350 648 C480 600 616 570 720 470 C748 442 771 417 792 392 C832 470 855 540 888 602 C962 742 1056 846 1135 980 L847 980 C789 862 736 766 672 692 C606 616 507 632 350 648Z" fill="url(#riverGlow)" filter="url(#blur)"/>
+  <path d="M760 390 C796 480 828 555 878 642 C936 744 1008 844 1084 980 L930 980 C854 846 792 752 724 680 C679 632 620 616 548 628 C620 584 696 506 760 390Z" fill="url(#goldRiver)" opacity=".86"/>
+  <path d="M776 412 C808 504 842 574 892 662 C950 762 1016 858 1070 980 L1014 980 C938 838 876 746 812 676 C770 630 728 586 776 412Z" fill="#f7d38a" opacity=".18"/>
+
+  <path d="M0 0 H1600 V980 H0Z" fill="none" stroke="#f2c879" stroke-opacity=".04"/>
+  <rect width="1600" height="980" fill="#000" opacity=".18"/>
+</svg>
